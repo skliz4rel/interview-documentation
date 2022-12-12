@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 12, 2022 at 12:28 AM
+-- Generation Time: Dec 12, 2022 at 02:38 PM
 -- Server version: 5.7.14
 -- PHP Version: 5.6.25
 
@@ -78,7 +78,7 @@ INSERT INTO `loan` (`id`, `createdDate`, `createdTime`, `requestedAmount`, `inte
 --
 
 CREATE TABLE `token` (
-  `id` varchar(11) DEFAULT NULL,
+  `id` varchar(1000) DEFAULT NULL,
   `username` varchar(255) DEFAULT NULL,
   `hashPassword` varchar(255) DEFAULT NULL,
   `basicAuthstr` varchar(255) DEFAULT NULL,
@@ -90,7 +90,7 @@ CREATE TABLE `token` (
 --
 
 INSERT INTO `token` (`id`, `username`, `hashPassword`, `basicAuthstr`, `scoringEngineToken`) VALUES
-(NULL, 'username', 'haspassword', 'dXNlcm5hbWU6cGFzc3dvcmQ=', 'a04ffc2c-f72b-482f-aa4d-a037e0f6dcc6');
+('1', 'username', 'haspassword', 'dXNlcm5hbWU6cGFzc3dvcmQ=', 'token');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
